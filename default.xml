@@ -1,17 +1,5 @@
 <manifest>
-    <remote name="upstream-sardana-alba"
-            fetch="https://github.com/ALBA-Synchrotron/sardana-alba.git" />
-    <remote name="upstream-sardana-ni660x"
-            fetch="https://github.com/ALBA-Synchrotron/sardana-ni660x.git" />
-
-    <default revision="refs/heads/master"
-            remote="sardana-alba"
-            sync-j="4" />
-
-    <default revision="refs/heads/master"
-            remote="sardana-ni660x"
-            sync-j="4" />
-
-    <project name="sardana-alba" remote="upstream-sardana-alba"/>
-    <project name="sardana-ni660x" remote="upstream-sardana-ni660x"/>
+<remote name="ALBA-Synchrotron" fetch="https://github.com/ALBA-Synchrotron"/>
+<project name="sardana-alba" remote="ALBA-Synchrotron" revision="master"/>
+<project name="sardana-ni660x" remote="ALBA-Synchrotron" revision="master"/>
 </manifest>
